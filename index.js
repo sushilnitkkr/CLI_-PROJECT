@@ -1,19 +1,14 @@
+const { log, Console } = require('console');
 var readlineSync = require('readline-sync');
 
-var score = 0;
-//Input
-var yourAge = readlineSync.question('Am i older than 25 ? ');
-console.log(yourAge);
-//processing
-if (yourAge === "yes") {
-  //output
-  console.log("you are right.")
-  score = score + 1;
-  console.log("your score is " + score);
-}
-else {
-  //output
-  console.log("you are wrong.")
-  score = score - 1;
-  console.log("your score is " + score);
+//for loop
+let printNamelen = readlineSync.questionInt("How many times want to print your name? ")
+console.log(printNamelen)
+
+for(var i =0;i<=printNamelen;i++){
+console.log("* ".repeat(i))
+  // for(var j= 0;j<=i;j++){
+    
+  // }
+  
 }
